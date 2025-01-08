@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
+  "name": "nuxt-glaze",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "Unofficial Nuxt module for Glaze.dev",
+  "repository": "holux-design/nuxt-glaze",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -24,12 +24,16 @@
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.15.1"
+    "@nuxt/kit": "^3.15.1",
+    "defu": "^6.1.4",
+    "glazejs": "^2.0.1",
+    "gsap": "^3.12.5"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.7.0",

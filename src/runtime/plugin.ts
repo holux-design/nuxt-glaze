@@ -1,5 +1,21 @@
-import { defineNuxtPlugin } from '#app'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import glaze from 'glazejs'
+import { defineNuxtPlugin, useRuntimeConfig } from '#app'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default defineNuxtPlugin((_nuxtApp) => {
-  console.log('Plugin injected by my-module!')
+  const configOptions = useRuntimeConfig().public.glaze ?? {}
+
+  _nuxtApp.hook('app:beforeMount', () => {
+    glaze({
+      lib: {
+        gsap: {
+          core: gsap,
+        },
+      },
+      ...configOptions,
+    })
+  })
 })
