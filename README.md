@@ -2,9 +2,9 @@
 Get your module up and running quickly.
 
 Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
-- Package name: my-module
-- Description: My new Nuxt module
+- Name: Glaze for Nuxt
+- Package name: nuxt-glaze
+- Description: An (unofficial) Glaze module for Nuxt
 -->
 
 # Glaze for Nuxt
@@ -106,13 +106,13 @@ Find a full list of options here:
 <!-- Badges -->
 
 [npm-version-src]:
-  https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/my-module
+  https://img.shields.io/npm/v/nuxt-glaze/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://npmjs.com/package/nuxt-glaze
 [npm-downloads-src]:
-  https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npm.chart.dev/my-module
+  https://img.shields.io/npm/dm/nuxt-glaze.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-href]: https://npm.chart.dev/nuxt-glaze
 [license-src]:
-  https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/my-module
+  https://img.shields.io/npm/l/nuxt-glaze.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://npmjs.com/package/nuxt-glaze
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
